@@ -35,8 +35,9 @@
 
 /* Sidebar width */
 .offcanvas-start {
-  width: 75% !important;
-  max-width: 350px;
+  width: 80% !important;
+  max-width: 360px;
+  height: auto;
   border-radius: 0 15px 15px 0;
 }
 
