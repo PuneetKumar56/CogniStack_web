@@ -1,0 +1,83 @@
+ body { 
+    font-family: 'Segoe UI', sans-serif; 
+    box-sizing: border-box;
+     padding-top: 70px;
+}
+
+    .hero {
+        padding: 80px 0;
+background: linear-gradient(135deg,#0e675f,#28868e, #44b2bc);
+  color: #fff;
+    }
+
+    .highlight {
+        color: #0c334fea;;
+    }
+
+    .index-btn a:hover{
+       font-size: 17px;
+       transition:all;
+    }
+    .btn-outline {
+        border: 2px solid #4f46e5;
+        color: #4f46e5;
+    }
+
+    .section {
+        padding: 60px 0;
+    }
+
+    .section-title {
+        text-align: center;
+        font-weight: 700;
+    }
+
+    .section-sub {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .service-card {
+        padding: 25px;
+        border-radius: 15px;
+        background: #fff;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .service-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .service-icon {
+        font-size: 30px;
+        margin-bottom: 10px;
+        color: #4f46e5;
+    }
+
+    .stats {
+        background: #0f2b3d;
+        color: white;
+        padding: 50px 0;
+        text-align: center;
+    }
+
+    .stat-number {
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .blog-card {
+        padding: 20px;
+        background: #fff;
+        border-radius: 15px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        text-align: center;
+    }
+
+    @media(max-width:768px){
+        .hero {
+            text-align: center;
+        }
+    }

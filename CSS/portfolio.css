@@ -1,0 +1,145 @@
+/* ================= GLOBAL ================= */
+body {
+     padding-top: 70px;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f7fb;
+  color: #1a1a1a;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+.container {
+  max-width: 1140px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+/* ================= HERO ================= */
+.hero {
+  background: linear-gradient(135deg, #0d5c63, #12a599,#29cdbf);
+  color: #fff;
+}
+
+.section-title {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+/* ================= GRID ================= */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* ================= CARD ================= */
+.portfolio-item {
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  transition: 0.4s;
+  position: relative;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+}
+
+/* ================= IMAGE ================= */
+.portfolio-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: 0.4s;
+}
+
+.portfolio-item:hover .portfolio-img {
+  transform: scale(1.08);
+}
+
+/* ================= INFO ================= */
+.portfolio-info {
+  padding: 20px;
+  text-align: center;
+}
+
+.portfolio-info h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.portfolio-info p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* ================= OVERLAY EFFECT ================= */
+.portfolio-item::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent, rgba(0,0,0,0.4));
+  opacity: 0;
+  transition: 0.3s;
+  pointer-events: none; /* 🔥 FIX */
+}
+
+.portfolio-item:hover::after {
+  opacity: 1;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section-title {
+    font-size: 32px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section {
+    padding: 50px 0;
+  }
+
+  .section-title {
+    font-size: 26px;
+    text-align: center !important;
+  }
+
+  .hero p {
+    text-align: center;
+    font-size: 15px;
+  }
+}
+
+/* Small devices */
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 22px;
+  }
+
+  .portfolio-img {
+    height: 180px;
+  }
+}

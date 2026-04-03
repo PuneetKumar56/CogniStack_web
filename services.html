@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/services.css">
+    <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+    <div id="navbar"></div>
+    <section class="hero" style="padding: 60px 0;">
+        <div class="container">
+            <h1 class="section-title" style="text-align:left;">Our Services</h1>
+            <p>We deliver high-quality, scalable, and secure digital solutions tailored to your business needs.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="services-grid">
+                <div class="services-grid">
+
+                    <div class="service-card">
+                       <img src="/images/sw icon.png" alt="software Icon" class="service-icon">
+                        <h3>Custom Software Development</h3>
+                        <p>Tailored software solutions designed to meet your unique business needs and workflows.</p>
+                    </div>
+
+                    <div class="service-card">
+                         <img src="/images/Mobile icon.png" alt="Mobile Icon" class="service-icon">
+                        <h3>Mobile App Development</h3>
+                        <p>High-performance Android & iOS apps using modern frameworks like Flutter and .NET MAUI.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <img src="/images/web icon.png" alt="Web Icon" class="service-icon">
+                        <h3>Website Development</h3>
+                        <p>Responsive and SEO-friendly websites using ASP.NET Core, React, and modern UI frameworks.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <i class="fas fa-users service-icon"></i>
+                        <h3>CRM Development</h3>
+                        <p>Manage leads, customers, and business operations with powerful CRM solutions.</p>
+                    </div>
+
+                    <div class="service-card">
+                         <img src="/images/UI UX icon.png" alt="UI & UX Icon" class="service-icon">
+                        <h3>UI & UX Design</h3>
+                        <p>Modern, user-friendly interfaces focused on enhancing user experience and engagement.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <img src="/images/cloud icon.png" alt="Cloud Icon" class="service-icon">
+                        <h3>Cloud & DevOps Solutions</h3>
+                        <p>Scalable cloud infrastructure, CI/CD pipelines, and deployment automation.</p>
+                    </div>
+
+                    <div class="service-card">
+                   <img src="/images/ecommerce icon.png" alt="Ecommerce Icon" class="service-icon">
+
+                        <h3>Ecommerce Development</h3>
+                        <p>Robust online stores with secure payment integration and smooth user experience.</p>
+                    </div>
+
+                    <div class="service-card">
+                     <img src="/images/Analysis icon.png" alt="Analysis Icon" class="service-icon">
+
+                        <h3>Data Analysis and Visualization</h3>
+                        <p>Transform your data into actionable insights with our advanced analytics and visualization tools.</p>
+                    </div>
+
+                    <div class="service-card">
+                       
+                         <img src="/images/PowerBi Icon.png" alt="Power BI Icon" class="service-icon">
+                        <h3>Excel and Power BI Reporting</h3>
+                        <p>Create insightful reports and dashboards using Excel and Power BI & Data Cleaning.</p>
+                    </div>
+
+                    <div class="service-card">
+                       <img src="/images/Ai icon.png" alt="AI Icon" class="service-icon">
+                        <h3>AI Services</h3>
+                        <p>Integrate AI-powered features like chatbots, automation, and smart analytics.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+<div id="footer"></div>
+<script>
+    fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('navbar').innerHTML = data;
+        });
+
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer').innerHTML = data;
+        });
+</script>
+</body>
+
+</html>

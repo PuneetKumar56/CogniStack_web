@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+     <link rel="stylesheet" href="CSS/portfolio.css">
+    <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+    <div id="navbar"></div>
+        <section class="hero" style="padding: 60px 0;">
+            <div class="container">
+                <h1 class="section-title" style="text-align:left;">Our Portfolio</h1>
+                <p>Some of the projects we've delivered with passion and precision.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <img src="/images/ecommarce.jpg" alt="Project 1" class="image-fluid rounded portfolio-img">
+                        <div class="portfolio-info">
+                            <h3>E‑commerce Platform</h3>
+                            <p>Full-featured online store with Razorpay integration and admin panel.</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="/Images/school web.png" alt="Project 2" class="portfolio-img">
+                        <div class="portfolio-info">
+                            <h3>School Website</h3>
+                            <p>Complete solution with fee collection, attendance, and result automation.</p>
+                            <a href="https://schoolmanagewebpuneet-dwgzbeafc0hmbqgx.centralindia-01.azurewebsites.net/Contact" target="_blank" style="cursor: pointer;">Check website</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="/images/fitness img.png" alt="Project 3" class="portfolio-img">
+                        <div class="portfolio-info">
+                            <h3>Fitness App</h3>
+                            <p>Cross-platform mobile app for workout tracking and nutrition plans.</p>
+                        </div>
+                    </div>
+
+                     <div class="portfolio-item">
+                        <img src="/images/PowerBi Dashboard.png" alt="Project 3" class="portfolio-img">
+                        <div class="portfolio-info">
+                            <h3>Power BI Dashboards</h3>
+                            <p>Interactive dashboards for data visualization and business intelligence.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    <div id="footer"></div>
+    <script>
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar').innerHTML = data;
+            });
+
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+
+    </script>
+</body>
+
+</html>

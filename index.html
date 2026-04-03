@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CogniStack - Home</title>
+<!-- Custom CSS -->
+<link href="CSS/index.css" rel="stylesheet">
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+<!-- Navbar -->
+<div id="navbar"></div>
+<!-- HERO -->
+<section class="hero">
+    <div class="container">
+        <div class="row align-items-center g-4">
+            <div class="col-md-6">
+                <h1>We Build <span class="highlight">Intelligent</span> Digital Solutions</h1>
+                <p>Websites, mobile apps, custom ERP & software – crafted with modern tech and human insight.</p>
+                <div class="mt-3 index-btn">
+                    <a href="services.html" class="btn border-black me-2">Explore Services</a>
+                    <a href="contact.html" class="btn border-black">Start a Project</a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img src="images/Logo.png" class="img-fluid rounded">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">What We Deliver</h2>
+        <p class="section-sub">End-to-end technology solutions to scale your business</p>
+        <div class="row g-4">
+            <div class="col-md-3 col-sm-6">
+                <div class="service-card">
+                    <i class="fas fa-code service-icon"></i>
+                    <h5>Web Development</h5>
+                    <p>Responsive websites & web apps using modern stacks.</p>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="service-card">
+                    <i class="fas fa-mobile-alt service-icon"></i>
+                    <h5>Mobile Apps</h5>
+                    <p>iOS & Android apps with high performance.</p>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="service-card">
+                    <i class="fas fa-chalkboard service-icon"></i>
+                    <h5>ERP & Software</h5>
+                    <p>Custom ERP, school, and business systems.</p>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="service-card">
+                    <i class="fas fa-chart-line service-icon"></i>
+                    <h5>Digital Transformation</h5>
+                    <p>Automation & modern digital solutions.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- STATS -->
+
+<section class="stats">
+    <div class="container">
+        <div class="row">
+            <div class="col-6 col-md-3">
+                <div class="stat-number">3+</div>
+                <p>Years Experience</p>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="stat-number">50+</div>
+                <p>Projects Delivered</p>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="stat-number">100%</div>
+                <p>Client Satisfaction</p>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="stat-number">24/7</div>
+                <p>Support</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- BLOG -->
+
+<section class="section">
+    <div class="container">
+            <h2 class="section-title">Latest Insights</h2>
+            <p class="section-sub">Thoughts on tech, business, and innovation</p>
+
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="blog-card">
+                    <i class="fas fa-newspaper service-icon"></i>
+                    <h5 class="mt-3">Why Your Business Needs a Modern Website</h5>
+                    <p class="text-muted">March 2026</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="blog-card">
+                     <i class="fas fa-mobile-alt service-icon"></i>
+                    <h5 class="mt-3">Mobile Apps vs Websites</h5>
+                    <p class="text-muted">March 2026</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="blog-card">
+                    <i class="fas fa-brain service-icon"></i>
+                    <h5 class="mt-3">How AI is Changing Software</h5>
+                    <p class="text-muted">Feb 2026</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+
+<section class="py-5 text-center" style="background:#eef2ff;">
+    <div class="container">
+        <h2>Ready to Build Something Intelligent?</h2>
+        <p class="text-muted">Let’s turn your idea into a powerful solution.</p>
+        <a href="contact.html" class="btn btn-primary mt-3">Get a Free Consultation</a>
+    </div>
+</section>
+<div id="footer"></div>
+<!-- JS -->
+<script>
+fetch("navbar.html")
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById("navbar").innerHTML = data;
+  });
+</script>
+
+<script>
+    fetch("footer.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("footer").innerHTML = data;
+        });
+</script>
+
+</body>
+</html>
