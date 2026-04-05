@@ -1,96 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Bootstrap 5 -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="CSS/navbar.css">
-</head>
-<body>
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-<!-- Navbar -->
-<nav class="navbar bg-white shadow-sm px-3">
-  <div class="container-fluid">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="CSS/navbar.css">
+  </head>
 
-    <!-- Logo -->
-    <!-- <a class="navbar-brand" href="#">
-      <img src="/Images/NavLogo.png" id="logoimg" class="img-fluid">
-    </a>
-     <a href="https://wa.me/919193507411?text=Hello%20I%20want%20to%20enquire" target="_blank">
-        <img src="/images/Icons/Whatsapp2.svg" width="30">
-    </a>   -->
+  <body>
 
-  <a class="navbar-brand" href="#">
-  <img src="/Images/NavLogo.png" id="logoimg" class="img-fluid">
-</a>
+    <!-- Navbar -->
+    <nav class="navbar bg-white shadow-sm px-3">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="/Images/NavLogo.png" id="logoimg" class="img-fluid"></a>
 
-<div class="d-flex align-items-center gap-2">
+        <div class="d-flex align-items-center gap-2">
 
-  <!-- WhatsApp Button 1 -->
-  <a href="https://wa.me/919193507411?text=Hello%20I%20want%20to%20enquire"
-     target="_blank"
-     class="btn btn-success d-flex align-items-center gap-1">
-     
-    <img src="/images/Icons/Whatsapp2.svg" width="18">
-    <span>9193507411</span>
-  </a>
-  <!-- WhatsApp Button 2 -->
-  <!-- <a href="https://wa.me/917505012533?text=Hello%20I%20want%20to%20enquire"
-     target="_blank"
-     class="btn btn-success d-flex align-items-center gap-1">
-     
-    <img src="/images/Icons/Whatsapp2.svg" width="18">
-    <span>7505012533</span>
-  </a> -->
+          <!-- WhatsApp Button 1 -->
+          <a href="https://wa.me/919193507411?text=Hello%20I%20want%20to%20enquire" target="_blank"
+            class="btn btn-success d-flex align-items-center gap-1">
 
-</div>
-    <!-- Mobile Toggle (ONLY <768px) -->
-    <button class="btn d-md-none" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
-      ☰
-    </button>
+            <img src="/images/Icons/Whatsapp2.svg" width="18">
+            <span>9193507411</span>
+          </a>
+          
+        </div>
+    
+      <!-- Mobile Toggle (ONLY <768px) -->
+      <button class="btn d-md-none" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+        ☰
+      </button>
+  </div>
+      <!-- Desktop + Tablet Menu -->
+      <div class="d-none d-md-flex ms-auto">
+        <ul class="navbar-nav flex-row align-items-center">
 
-    <!-- Desktop + Tablet Menu -->
-    <div class="d-none d-md-flex ms-auto">
-      <ul class="navbar-nav flex-row align-items-center">
+          <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="insight.html">Insights</a></li>
 
-        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-        <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-        <li class="nav-item"><a class="nav-link" href="insight.html">Insights</a></li>
+        </ul>
+      </div>
 
-      </ul>
+      </div>
+    </nav>
+    <!-- Mobile Sidebar -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu">
+      <div class="offcanvas-header">
+        <img src="/Images/NavLogo.png" id="logoimg" class="img-fluid">
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        <!-- add whatsApp Icon -->
+        <!-- <i class="fas fa-whatsapp" style="font-size:2rem; color:#3b82f6;"></i> -->
+
+      </div>
+
+      <div class="offcanvas-body">
+
+        <div class="menu-grid">
+          <a href="index.html" class="menu-item"><img src="/Images/Icons/Home icon.svg" width="50px" alt="Home">
+            <div>Home</div>
+          </a>
+          <a href="services.html" class="menu-item"><img src="/Images/Icons/services.svg" width="50px" alt="Services">
+            <div>Services</div>
+          </a>
+          <a href="portfolio.html" class="menu-item"><img src="/Images/Icons/portfolio.svg" width="50px"
+              alt="Portfolio">
+            <div>Portfolio</div>
+          </a>
+          <a href="about.html" class="menu-item"><img src="/Images/Icons/about.svg" width="50px" alt="About">
+            <div>About</div>
+          </a>
+          <a href="contact.html" class="menu-item"><img src="/Images/Icons/contact.svg" width="50px" alt="Contact">
+            <div>Contact</div>
+          </a>
+          <a href="insight.html" class="menu-item"><img src="/Images/Icons/insights.svg" width="50px" alt="Insights">
+            <div>Insights</div>
+          </a>
+        </div>
+      </div>
     </div>
+  </body>
 
-  </div>
-</nav>
-<!-- Mobile Sidebar -->
-<div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu">
-  <div class="offcanvas-header">
-    <img src="/Images/NavLogo.png" id="logoimg" class="img-fluid">
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
-    <!-- add whatsApp Icon -->
-    <!-- <i class="fas fa-whatsapp" style="font-size:2rem; color:#3b82f6;"></i> -->
-     
-  </div>
-
-  <div class="offcanvas-body">
-
-    <div class="menu-grid">
-      <a href="index.html" class="menu-item"><img src="/Images/Icons/Home icon.svg" width="50px" alt="Home"><div>Home</div></a>
-      <a href="services.html" class="menu-item"><img src="/Images/Icons/services.svg" width="50px" alt="Services"><div>Services</div></a>
-      <a href="portfolio.html" class="menu-item"><img src="/Images/Icons/portfolio.svg" width="50px" alt="Portfolio"><div>Portfolio</div></a>
-      <a href="about.html" class="menu-item"><img src="/Images/Icons/about.svg" width="50px" alt="About"><div>About</div></a>
-      <a href="contact.html" class="menu-item"><img src="/Images/Icons/contact.svg" width="50px" alt="Contact"><div>Contact</div></a>
-      <a href="insight.html" class="menu-item"><img src="/Images/Icons/insights.svg" width="50px" alt="Insights"><div>Insights</div></a>
-    </div>
-  </div>
-</div>
-</body>
 </html>
-
