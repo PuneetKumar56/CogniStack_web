@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>CogniStack - Contact</title>
     <link href="/CSS/contact.css" rel="stylesheet">
   </head>
 
@@ -26,14 +26,14 @@
               <h4 class="mb-4">Contact Information</h4>
 
               <div class="info-item">
-                <i class="fa-solid fa-phone"></i>
+               <img src="/images/Icons/Call.svg" class="service-icon" width="30px">
                 <p class="title">Mobile:</p>
                 <h5>+91 9193507411</h5>
                 <h5>+91 7505012533</h5>
               </div>
 
               <div class="info-item">
-                <i class="fa-solid fa-envelope"></i>
+                <img src="/images/Icons/Email.svg" class="service-icon" width="30px">
                 <p class="title">Email:</p>
                 <h5>cognistacktech@gmail.com</h5>
                 <h5>techcode56@gmail.com</h5>
@@ -41,7 +41,7 @@
               </div>
 
               <div class="info-item">
-                <i class="fa-solid fa-location-dot"></i>
+                <img src="/images/Icons/Location.svg" class="service-icon" width="30px">
                 <p class="title">Address:</p>
                 <h5>Noida, India</h5>
               </div>
@@ -254,6 +254,13 @@
 
             // 🔄 Reset form
             form.reset();
+            document.querySelectorAll(".form-control").forEach(input => {
+              input.classList.remove("is-valid", "is-invalid");
+            });
+
+            document.querySelectorAll("small.text-danger").forEach(el => {
+                el.innerText = "";
+            });
 
           }, function (error) {
 
