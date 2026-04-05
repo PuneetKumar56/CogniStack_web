@@ -1,0 +1,53 @@
+ body {
+    padding-top: 60px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+    }
+ .hero {
+      background: linear-gradient(135deg,#0e675f,#28868e,#44b2bc);
+      color: #fff;
+    }
+
+    .hero-img {
+      border-radius: 15px;
+      transition: 0.3s;
+    }
+
+    .hero-img:hover {
+      transform: scale(1.05);
+    }
+
+    /* FEATURE CARD */
+    .feature-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+      transition: 0.3s;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+    }
+
+    .feature-card .icon {
+      font-size: 30px;
+      margin-bottom: 8px;
+    }
+
+    .feature-card p {
+      font-size: 14px;
+      color: #555;
+    }
+
+    /* CTA */
+    .cta {
+      background: linear-gradient(135deg,#3b82f6,#06b6d4);
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        text-align: center;
+      }
+    }

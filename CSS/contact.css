@@ -7,6 +7,33 @@ body {
   line-height: 1.6;
 }
 
+.hero {
+  background: linear-gradient(135deg,#0e675f,#28868e,#44b2bc);
+  color: #fff;
+}
+
+.hero-img {
+  max-width: 100%;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+/* Hover effect (optional premium feel) */
+.hero-img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive text alignment */
+@media (max-width: 768px) {
+  .hero {
+    text-align: center;
+  }
+
+  .hero .section-title {
+    text-align: center !important;
+  }
+}
+
 .section {
   padding: 70px 0;
 }
